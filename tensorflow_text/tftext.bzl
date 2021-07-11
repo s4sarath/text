@@ -93,8 +93,8 @@ def tf_deps(deps = []):
             "@org_tensorflow//tensorflow/core:portable_tensorflow_lib_lite",
         ],
         "//conditions:default": [
-            "@local_config_tf//:libtensorflow_framework",
-            "@local_config_tf//:tf_header_lib",
+            "@org_tensorflow//tensorflow/core:framework",
+            "@org_tensorflow//tensorflow/core:lib",
         ] + deps + oss_deps,
     })
 

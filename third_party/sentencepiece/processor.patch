@@ -22,8 +22,8 @@ index b4298d2..7ce779f 100644
 +              "@org_tensorflow//tensorflow/core:tflite_portable_logging",
 +            ],
 +            "//conditions:default": [
-+              "@local_config_tf//:libtensorflow_framework",
-+              "@local_config_tf//:tf_header_lib",
++              "@org_tensorflow//tensorflow/core:framework",
++              "@org_tensorflow//tensorflow/core:lib",
 +              "@com_google_absl//absl/functional:function_ref",
 +              "@com_google_absl//absl/strings:cord",
 +            ],
